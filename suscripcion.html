@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Suscripcion - Turbo Popular</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="imagenes/favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="suscripcion-inicio">
+
+<input type="checkbox" id="menu-abierto" class="checkbox-sidebar">
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge ocultar" id="mySidebar">
+  <label for="menu-abierto" class="w3-bar-item w3-button w3-text-teal puntero">
+    Cerrar <i class="fa fa-remove"></i>
+  </label>
+  <hr>
+  <a href="index.html" class="w3-bar-item w3-button boton-barra-lateral">Inicio</a>
+  <hr>
+  <a href="info.html" class="w3-bar-item w3-button boton-barra-lateral">La Revista</a>
+  <hr>
+  <a href="galeria.html" class="w3-bar-item w3-button boton-barra-lateral">Catalogo</a>
+  <hr>
+  <a href="suscripcion.html" class="w3-bar-item w3-button boton-barra-lateral">Suscripcion</a>
+</nav>
+
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <label for="menu-abierto" class="w3-bar-item w3-button w3-hover-white puntero">
+      <i class="fa fa-bars"></i>
+    </label>
+    <a href="index.html" class="w3-bar-item w3-button w3-teal">
+      <i class="fa fa-home w3-margin-right"></i>Turbo Popular
+    </a>
+    <span class="w3-bar-item w3-hide-small w3-opacity titulo-menu-lateral">Suscripcion</span>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-theme-l5" id="formulario">
+  <div class="w3-row">
+    <div class="w3-col m5">
+      <div class="w3-padding-16">
+        <span class="w3-xlarge w3-border-teal w3-bottombar">Suscribete</span>
+      </div>
+      <h3>Recibe la revista cada mes</h3>
+      <p>Rellena el formulario y te enviamos Turbo Popular a tu domicilio.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Madrid, Espana</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +34 91 000 00 00</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  suscripciones@turbopopular.es</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="http://172.22.200.240/resultado.php" method="post">
+
+        <div class="w3-section">
+          <label for="nombre">Nombre</label>
+          <input class="w3-input" type="text" name="nombre" id="nombre" required>
+        </div>
+        <div class="w3-section">
+          <label for="apellidos">Apellidos</label>
+          <input class="w3-input" type="text" name="apellidos" id="apellidos" required>
+        </div>
+        <div class="w3-section">
+          <label for="email">Email</label>
+          <input class="w3-input" type="email" name="email" id="email" required>
+        </div>
+        <div class="w3-section">
+          <label for="telefono">Telefono</label>
+          <input class="w3-input" type="tel" name="telefono" id="telefono">
+        </div>
+        <div class="w3-section">
+          <label for="direccion">Direccion</label>
+          <input class="w3-input" type="text" name="direccion" id="direccion">
+        </div>
+        <div class="w3-section">
+          <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+          <input class="w3-input" type="date" name="fecha-nacimiento" id="fecha-nacimiento">
+        </div>
+        <h3>Cuentanos algo sobre ti</h3>
+        <div class="w3-section">
+          <label for="carroceria-fav">Tipo de carroceria favorita</label>
+          <select name="carroceria-fav" id="carroceria-fav">
+            <option value="coupe">Coupe</option>
+            <option value="sedan">Sedan</option>
+            <option value="hatcback">Hatback</option>
+            <option value="Sportback">Sportback</option>
+            <option value="berlina">Berlina</option>
+            <option value="suv">SUV</option>
+            <option value="cabrio">Cabrio</option>
+            <option value="roadster">Roadster</option>
+            <option value="targa">Targa</option>
+          </select>
+        </div>
+        <hr>
+        <div class="w3-section">
+          <label>¿Que tipo de deportivo prefieres?</label>
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="barcheta-ligera">Barcheta ligera
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="gt-capaz">Gran Turismo capaz
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="coupe-tradicional">Coupe tradicional
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="sedan-potente">Sedan Potente
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="hatcback-jugeton">Hatcback jugueton
+        </div>
+        <hr>
+        <div class="w3-section">
+          <label>¿Que ejes motrices has provado?</label>
+          <input class="w3-input" type="checkbox" name="eje-motriz" value="fwd" checked>FWD
+          <input class="w3-input" type="checkbox" name="eje-motriz" value="fwd">RWD
+          <input class="w3-input" type="checkbox" name="eje-motriz" value="fwd">AWD
+          <input class="w3-input" type="checkbox" name="eje-motriz" value="fwd">4X4
+        </div>
+        <HR>
+        <div class="w3-section">
+          <label for="motor">¿Cuál es tu tipo de motor favorito?</label>
+          <input class="w3-input" name="motor" id="motor" list="motor-list">
+          <datalist id="motor-list">
+            <option value="B2"></option>
+            <option value="I3"></option>
+            <option value="I4"></option>
+            <option value="B4"></option>
+            <option value="I6"></option>
+            <option value="B6"></option>
+            <option value="V6"></option>
+            <option value="V8"></option>
+            <option value="V10"></option>
+            <option value="V12"></option>
+            <option value="F12"></option>
+          </datalist>
+        </div>
+        <hr>
+        <div class="w3-section">
+          <label for="enlace">¿Tienes un blog de automocion? Copartelo con nosotros</label>
+          <input class="w3-input" type="url" name="enlace" id="enlace">
+        </div>
+        <div class="w3-section">
+          <label for="color">¿Cual es tu color de carroceria favorito?</label>
+          <input class="w3-input" type="color" name="color" id="color">
+        </div>
+        <hr>
+        <div class="w3-section">
+          <label for="habilidad">¿Como de alta consideras tu habilidad como conductor?</label>
+          <input class="w3-input" type="range" name="habilidad" id="habilidad">
+        </div>
+        <hr>
+        <div class="w3-section">
+          <label for="imagen">¿Por que no subes una imagen de tu coche favorito?</label>
+          <input class="w3-input" type="file" name="imagen" id="imagen">
+        </div>
+        <div class="w3-section">
+          <label for="texto">¿Por que no nos hablas un poco sobre ese coche?</label><br>
+          <textarea name="texto" id="texto" rows="4" cols="50"></textarea>
+        </div>
+        <input class="w3-input" type="hidden" name="numero-usuario" value="1000">
+        <button type="submit" class="w3-button w3-right w3-theme">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h3>Disclaimer: Esta pagina web es de un revista ficticea y no tiene nada que ver con ninguna entidad real</h3>
+  <hr>
+  <h4>Siguenos</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com"  target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.twitter.com"   target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.youtube.com"   target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <hr>
+  <a class="w3-button w3-large w3-teal" href="https://www.gonzalonazareno.org"  target="_blank" rel="noopener">Ir a Gonzalo Nazareno.org</a>
+</footer>
+</body>
+</html>

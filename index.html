@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Inicio - Turbo Popular</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="imagenes/favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="inicio">
+
+<input type="checkbox" id="menu-abierto" class="checkbox-sidebar">
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge ocultar" id="mySidebar">
+  <label for="menu-abierto" class="w3-bar-item w3-button w3-text-teal puntero">
+    Cerrar <i class="fa fa-remove"></i>
+  </label>
+  <hr>
+  <a href="index.html" class="w3-bar-item w3-button boton-barra-lateral">Inicio</a>
+  <hr>
+  <a href="info.html" class="w3-bar-item w3-button boton-barra-lateral">La Revista</a>
+  <hr>
+  <a href="galeria.html" class="w3-bar-item w3-button boton-barra-lateral">Catalogo</a>
+  <hr>
+  <a href="suscripcion.html" class="w3-bar-item w3-button boton-barra-lateral">Suscripcion</a>
+</nav>
+
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <label for="menu-abierto" class="w3-bar-item w3-button w3-hover-white puntero">
+      <i class="fa fa-bars"></i>
+    </label>
+    <a href="index.html" class="w3-bar-item w3-button w3-teal">
+      <i class="fa fa-home w3-margin-right"></i>Turbo Popular
+    </a>
+    <span class="w3-bar-item w3-hide-small w3-opacity titulo-menu-lateral">Inicio</span>
+  </div>
+</div>
+
+<div class="w3-display-container w3-animate-opacity">
+  <img src="imagenes/cabecera.png" class="imagen-principal" alt="Turbo Popular">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+    <button class="w3-button w3-xlarge w3-theme w3-hover-teal">La pasion del motor, al alcance de todos</button>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-center" id="pruebas">
+  <h2>ULTIMAS PRUEBAS</h2>
+  <p>Lo que hemos conducido este mes:</p>
+  <div class="w3-row"><br>
+
+    <div class="w3-quarter">
+      <img src="imagenes/golf-gti-mk4.png" class="w3-circle w3-hover-opacity imagenes-ini" alt="Golf GTI Mk4">
+      <h3>Golf GTI Mk4</h3>
+      <p>Hot Hatch de referencia</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="imagenes/mx5-nb.png" class="w3-circle w3-hover-opacity imagenes-ini" alt="Mazda MX-5 NB">
+      <h3>Mazda MX-5 NB</h3>
+      <p>Pura diversion cabrio</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="imagenes/m3-e46.png" class="w3-circle w3-hover-opacity imagenes-ini" alt="BMW M3 E46">
+      <h3>BMW M3 E46</h3>
+      <p>El mejor M3 de la saga</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="imagenes/350z.png" class="w3-circle w3-hover-opacity imagenes-ini" alt="Nissan 350Z">
+      <h3>Nissan 350Z</h3>
+      <p>El Z mas accesible</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="noticias">
+
+  <div class="w3-quarter">
+    <h2>Noticias</h2>
+    <p>Esta semana ponemos a prueba el <strong>Astra OPC</strong> en pista,
+    comparamos el <mark>MX-5 NB contra el BMW Z3</mark>, y repasamos
+    por que el <em>Golf GTI Mk3</em> sigue siendo tan querido.
+    Tambien: guia de compra del <strong>Honda S2000</strong> de segunda mano
+    y reportaje del encuentro <abbr title="Japan Domestic Market">JDM</abbr> de Madrid.</p>
+    <a href="galeria.html" class="w3-button w3-teal w3-margin-top">Ver catalogo</a>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="imagenes/astra-opc.png" class="imagenes-noticia" alt="Astra OPC">
+      <div class="w3-container">
+        <h3>Astra OPC</h3>
+        <h4>240 CV de rabia alemana</h4>
+        <p>Opel mete el motor del Vectra OPC en un compacto.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="imagenes/integra-typeR.png" class="imagenes-noticia" alt="Honda Integra Type R">
+      <div class="w3-container">
+        <h3>Honda Integra Type R</h3>
+        <h4>El VTEC mas puro</h4>
+        <p>Sin turbo. Un motor que canta a 8.400 rpm.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="imagenes/s2000.png" class="imagenes-noticia" alt="Honda S2000">
+      <div class="w3-container">
+        <h3>Honda S2000</h3>
+        <h4>Roadster de alta cuerda</h4>
+        <p>El motor de mayor potencia especifica de su epoca.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h3>Disclaimer: Esta pagina web es de un revista ficticea y no tiene nada que ver con ninguna entidad real</h3>
+  <hr>
+  <h4>Siguenos</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com"  target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.twitter.com"   target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.youtube.com"   target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <hr>
+  <a class="w3-button w3-large w3-teal" href="https://www.gonzalonazareno.org"  target="_blank" rel="noopener">Ir a Gonzalo Nazareno.org</a>
+</footer>
+</body>
+</html>
