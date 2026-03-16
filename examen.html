@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="info-inicio">
+<body id="examen-inicio">
 
 <input type="checkbox" id="menu-abierto" class="checkbox-sidebar">
 
@@ -40,77 +40,78 @@
   </div>
 </div>
 
-<div class="w3-container w3-theme-l1 titular-info">
+<header class="w3-container w3-theme-l1 titular-info">
   <h1 class="w3-center">TURBO POPULAR</h1>
   <p class="w3-center w3-opacity">La revista de los deportivos accesibles desde 1993</p>
-</div>
+</header>
 
 <div class="w3-row-padding w3-padding-64">
-
-  <article class="w3-col m8">
-    <h2>Nuestra historia</h2>
-    <p class="w3-justify">
-      <strong>Turbo Popular</strong> nacio en Madrid en 1993 de la mano de
-      <em>Marcos Perez</em>, un ingeniero mecanico convencido de que los mejores
-      deportivos no son los mas caros sino los mas divertidos.
-    </p>
-    <p class="w3-justify">
-      Los primeros numeros se imprimian en una fotocopiadora y se repartian en
-      concentraciones de <mark>Golf GTI y BMW E30</mark> por toda la Peninsula.
-      En poco tiempo la revista crecio hasta convertirse en la publicacion de
-      referencia para el aficionado al
-      <abbr title="Automovil de altas prestaciones accesible">sport compacto</abbr>
-      en Espana.
-    </p>
-
-    <div class="cita-destacada">
-      "El mejor coche deportivo es el que puedes conducir cada dia y seguir sonriendo."
-      <br><small>-- Marcos Perez, fundador</small>
-    </div>
-
-    <h3>Lo que encontraras cada mes</h3>
-    <ol>
-      <li>Prueba en carretera del coche del mes</li>
-      <li>Comparativa entre rivales directos</li>
-      <li>Guia de compra de segunda mano</li>
-      <li>Mecanica explicada sin tecnicismos</li>
-      <li>Reportaje de concentraciones y eventos</li>
-    </ol>
-
-    <h3>Lo que no encontraras</h3>
-    <ul>
-      <li>Hipercoches de un millon de euros</li>
-      <li>Publicidad disfrazada de articulo</li>
-      <li>Jerga tecnica sin explicacion</li>
-    </ul>
-
-    <p>Lee tambien nuestros articulos en
-      <a href="https://www.motorpasion.es" target="_blank" rel="noopener">MotorPasion</a>,
-      <a href="https://www.topgear.com"    target="_blank" rel="noopener">Top Gear UK</a> y
-      <a href="https://www.autosport.com"  target="_blank" rel="noopener">Autosport</a>.
-    </p>
-  </article>
-
-  <aside class="w3-col m4">
-    <div class="w3-card w3-white w3-padding-16">
-      <h4 class="w3-center w3-text-teal"><i class="fa fa-info-circle"></i> Ficha rapida</h4>
-      <ul class="w3-ul w3-border">
-        <li><strong>Fundacion:</strong> 1993</li>
-        <li><strong>Sede:</strong> Madrid</li>
-        <li><strong>Frecuencia:</strong> Mensual</li>
-        <li><strong>Lectores:</strong> 40.000/mes</li>
-        <li><strong>ISSN:</strong> 9876-5432</li>
-      </ul>
-    </div>
-
-    <div class="w3-card w3-white w3-padding-16 w3-margin-top">
-      <h4 class="w3-center w3-text-teal"><i class="fa fa-users"></i> Equipo</h4>
-      <p><strong>Marcos Perez</strong><br>Director</p>
-      <p><strong>Laura Gil</strong><br>Redactora jefe</p>
-      <p><strong>Rafa Dominguez</strong><br>Fotografo</p>
-      <p><strong>Irene Santos</strong><br>Diseno</p>
-    </div>
-  </aside>
+  <h2>Lista Ordenada</h2>
+  <h3>Leguajes de programacion usados en la actualidad</h3>
+  <ol>
+    <li>Go</li>
+    <li>Kotlin</li>
+    <li>C#</li>
+    <li>Python</li>
+  </ol>
+  <br>
+  <br> 
+  <a href="https://dit.gonzalonazareno.org/gestiona/"><img src="imagenes/iesgn.jpeg" class="img-examen" alt="Ies Gonzalo Nazareno"></a>
+  <br>
+  <br>
+  <p>La imagen contiene el logotipo del centro Ies Gonzalo Nazareno donde curso los estoudios de lo que me estoy examinando actualamente </p>
+  <br>
+  <br>
+  <h2>Tabla</h2>
+  <table class="w3-table-all w3-hoverable w3-striped">
+      <thead>
+        <tr><th>Tipos de disco duro</th></tr>
+        <tr>
+          <th>Tipo de disco</th>
+          <th>Precio</th>
+          <th>Velocidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>HDD-ID</td><td>Bajo</td><td>100Mb/s</td></tr>
+        <tr><td>HDD-SATA</td><td>Bajo</td><td>150-300Mb/s</td></tr>
+        <tr><td>SSD-SATA</td><td>Medio</td><td>500Mb/s</td></tr>
+        <tr><td>NVME</td><td>Alto</td><td>2000-2500Mb/s</td></tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="http://endor.josedomingo.org/josedom/resultado.php" method="post">
+        <h2>FORMULARIO</h2>
+        <div class="w3-section">
+          <label for="email">Email</label>
+          <input class="w3-input" type="email" name="email" id="email">
+        </div>
+        <div class="w3-section">
+          <label for="texto">Introduce algo de texto</label><br>
+          <textarea name="texto" id="texto" rows="10" cols="10"></textarea>
+        </div>
+        <div class="w3-section">
+          <label>¿Que arquitectura de procesador prefieres?</label>
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="x86">x86
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="arm">arm
+          <input class="w3-input" type="radio" name="tipo-deportivo" value="risc">risc-5
+        </div>
+        <div class="w3-section">
+          <label for="asignatura">¿Que asignatura prefires?</label>
+          <select name="asignatura" id="asignatura">
+            <option value="redes">Redes</option>
+            <option value="base">Base de datos</option>
+            <option value="iso">Iso</option>
+          </select>
+        </div>
+        <div class="w3-section">
+          <label for="confirmar-envio">¿Quieres confirmar el envio?</label>
+          <input type="checkbox" id="confirmar-envio" name="confirmar-envio">
+        </div>
+        <button type="submit" class="w3-button w3-right w3-theme">Enviar</button>
+      </form>
+  
 
 </div>
 
